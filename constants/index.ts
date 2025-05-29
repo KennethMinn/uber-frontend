@@ -74,23 +74,23 @@ export const icons = {
 export const onboarding = [
   {
     id: 1,
-    title: "The perfect ride is just a tap away!",
+    title: "The perfect ride is \n just a tap away!",
     description:
-      "Your journey begins with Ryde. Find your ideal ride effortlessly.",
+      "Your journey begins with Ryde. \n Find your ideal ride effortlessly.",
     image: images.onboarding1,
   },
   {
     id: 2,
-    title: "Best car in your hands with Ryde",
+    title: "Best car in your \n hands with Ryde",
     description:
-      "Discover the convenience of finding your perfect ride with Ryde",
+      "Discover the convenience of finding \n your perfect ride with Ryde",
     image: images.onboarding2,
   },
   {
     id: 3,
-    title: "Your ride, your way. Let's go!",
+    title: "Your ride, your way. \n Let's go!",
     description:
-      "Enter your destination, sit back, and let us take care of the rest.",
+      "Enter your destination, sit back, and \n let us take care of the rest.",
     image: images.onboarding3,
   },
 ];

@@ -1,7 +1,11 @@
+import { useAuth } from "@/hooks/useAuth";
 import { Redirect } from "expo-router";
+import { Text } from "react-native";
 
 export default function Index() {
-  const isLogin = false;
+  const { user } = useAuth();
 
-  if (!isLogin) return <Redirect href="/welcome" />;
+  if (!user) return <Redirect href="/register" />;
+
+  if (user) return <Text>{user.name}</Text>;
 }
