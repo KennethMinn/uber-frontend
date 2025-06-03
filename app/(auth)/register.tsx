@@ -1,7 +1,7 @@
 import { icons, images } from "@/constants";
 import { useRegister } from "@/hooks/useRegister";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link } from "expo-router";
+import { Link, router } from "expo-router";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Alert, Image, Text, View } from "react-native";
@@ -31,6 +31,7 @@ const Register = () => {
   const onSubmit = async (data: TRegisterSchema) => {
     register(data, {
       onSuccess: () => {
+        router.push("/login");
         reset();
       },
       onError: () => {
